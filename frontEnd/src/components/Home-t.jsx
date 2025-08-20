@@ -1,6 +1,9 @@
 import { k1, k2, k3, k4 } from "../assets";
+import { useNavigate } from "react-router";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <h1 className="text-center text-4xl font-bold mb-10 mt-10">
@@ -81,7 +84,10 @@ const Home = () => {
           alt="KidsCareHub"
           className="w-full md:w-1/2 h-64 md:h-80 object-cover rounded-lg shadow-lg mb-6 transition-transform duration-300 hover:scale-105"
         />
-        <button className="hover:scale-105 transition-transform px-8 py-4 text-xl font-semibold text-white rounded-lg bg-blue-500 w-full md:w-auto">
+        <button
+          onClick={() => navigate("/register")}
+          className="hover:scale-105 transition-transform px-8 py-4 text-xl font-semibold text-white rounded-lg bg-blue-500 w-full md:w-auto"
+        >
           Start Now!
         </button>
       </div>
