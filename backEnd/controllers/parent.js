@@ -1,4 +1,4 @@
-import Parent from "../models/Parents.js";
+import Parent from "../models/Parent.js";
 
 const getAllParents = async (req, res) => {
   try {

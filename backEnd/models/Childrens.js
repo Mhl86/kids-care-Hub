@@ -21,7 +21,7 @@ const Children = sequelize.define("Children", {
   },
   Caregiver_Id: {
     type: DataTypes.INTEGER,
-    allowNull: false,
+    allowNull: true,
   },
 });
 
