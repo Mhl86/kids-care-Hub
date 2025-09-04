@@ -4,9 +4,12 @@ import Footer from "../components/Footer.jsx";
 
 function MainLayout() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <Outlet />
+      {/* Main content grows to push footer down */}
+      <main className="flex-1">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
